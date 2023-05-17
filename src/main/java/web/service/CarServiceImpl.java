@@ -10,7 +10,7 @@ import java.util.List;
 
 @Component
 public class CarServiceImpl implements CarService {
-    private List<Car> car;
+    private final List<Car> car;
     private static int checkCar;
     SecureRandom random = new SecureRandom();
     List<String> list = Arrays.asList("Rolls-Royce", "Bugatti", "Mercedes", "Lamborghini", "Koenigsegg");
